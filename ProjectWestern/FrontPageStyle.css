@@ -1,0 +1,157 @@
+
+/* I made this so I can have baground color outside of the box */
+body{
+    background-color: burlywood;
+}
+
+/* Here I have centered the box and applayed the same background and added a border as a nice touch */
+#Container
+    {background-color: burlywood;
+    position: fixed;
+    width: 1200px;
+    height: 800px;
+    position: relative; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+}
+
+
+/*Here I've fixed the postion and the transition timeing*/
+#G{
+    position: absolute;
+    position: fixed;
+    padding: .7px;
+    left: 600px;
+    top: 20px;
+    transition: transform 750ms;
+    transition-delay: 325ms;
+    z-index: 1;
+    
+}
+
+/*This is where I've coded the slide of the img */
+#G:hover{
+    transform: translate(-240px);
+    transition-timing-function: ease-in-out;
+    right: 200px;
+    
+}
+
+#TheGood{
+    position: absolute;
+    font-family: serif;
+    font-size: 80px;
+    color: aliceblue;
+    text-shadow: 5px 3px black;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    left: 700px;
+    top: 70px;
+    line-height: 85%;
+    
+}
+
+
+
+#B{
+    position: absolute;
+    position: fixed;
+    padding: .7px;
+    left: 600px;
+    top: 282px;
+    transition: transform 750ms;
+    transition-delay: 325ms;
+    z-index: 1;
+ 
+}
+
+#B:hover{
+    
+    transform: translate(260px);
+    transition-timing-function: ease-in-out;
+    right: 100px;
+}
+
+#TheBad{
+    position: absolute;
+    font-family: serif;
+    font-size: 80px;
+    color: aliceblue;
+    text-shadow: 5px 3px black;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    left: 250px;
+    top: 330px;
+    word-spacing: 2px;
+    line-height: 85%;
+    
+}
+
+
+
+#U{
+    position: absolute;
+    position: fixed;
+    padding: .7px;
+    left: 600px;
+    top: 545px;
+    transition: transform 750ms;
+    transition-delay: 325ms;
+    z-index: 1;
+    
+}
+
+#U:hover{
+    transform: translate(-240px);
+    right: 200px;
+    transition-timing-function: ease-in-out;
+}
+
+#TheUgly{
+    position: absolute;
+    font-family: serif;
+    font-size: 80px;
+    color: aliceblue;
+    text-shadow: 5px 3px black;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    left: 708px;
+    top: 593px;
+    line-height: 85%;
+}
+
+/* placement, Color adjustment and text adjustment */
+#Story{
+    position: absolute;
+    text-align: justify;
+    font-family: serif;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px gray;
+    line-height: 100%;
+    top: 14px;
+    left: 0px;
+    height: 140px;
+    width: 240px;
+}
+
+#PickYourHero{
+    position: absolute;
+    font-family: serif;
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 1px gray;
+    text-align: center;
+    line-height: 100%;
+    top: 12px;
+    left: 1000px;
+    height: 200px;
+}

@@ -1,0 +1,114 @@
+body{
+    background-color: burlywood;
+}
+
+
+#container{
+    width: 1200px;
+    height: 800px;
+    position: relative; 
+    background-repeat: no-repeat; 
+    background-image: url(Images/Lanscape3.png);
+    background-size: 100% 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+   
+}
+ /*Box placment and height adjustment */
+#Blondie{
+    position: absolute;
+    top: 450px;
+    left: 140px;
+    width: 90px;
+    height: 300px;
+    display: block;
+}
+/*when ever you hover over one of them they will get a dotted border, to indicate that you're targeting them */
+#Blondie:hover{
+  border-style: dotted;
+  border-color: red;
+}
+ 
+#AngleEye{
+    position: absolute;
+    top: 410px;
+    left: 890px;
+    width: 90px;
+    height: 306px;
+    display: block;
+    
+}
+ 
+#AngleEye:hover{
+  border-style: dotted;
+  border-color: red;
+}
+ 
+#Tuco{
+    position: absolute;
+    bottom: 180px;
+    left: 500px;
+    width: 90px;
+    height: 220px;
+    display: block;
+
+   
+}
+ 
+#Tuco:hover{
+  border-style: dotted;
+  border-color: red;
+  
+}
+ /*This is the placement, size and the animation movment of the UFO */
+#UFO {
+    height: 85px;
+    width: 100px;
+    background-image: url(UFO.png);
+    background-size: 100px;
+    position: absolute;
+    z-index: 1;
+    animation: UFO 3s linear infinite;
+    -webkit-animation: UFO 3s linear infinite;
+}
+
+@keyframes UFO{
+    0%{
+        top: 50px;
+        left: 200px;
+        opacity: 0.0;
+    }
+    20%{
+        top: 40px;
+        left: 390px;
+        opacity: 0.15;
+    }
+    40%{
+        top: 45px;
+        left: 400px;
+        opacity: 0.40;
+    }
+    50%{
+        top: 57px;
+        left: 510px;
+        opacity: 0.30;
+    }
+    60%{
+        top: 53px;
+        left: 60px;
+        opacity: 0.10;
+    }
+    80%{
+        top: 46px;
+        left: 00px;
+        opacity: 0.40;
+    }
+    100%{
+        top: 50px;
+        left: 700px;
+        opacity: 0.0;
+        animation-delay: 10s;
+    }
+}
